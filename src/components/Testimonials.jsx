@@ -18,7 +18,9 @@ const Testimonials = () => {
         
         <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
           <div>
-            <span className="text-sage-green font-semibold tracking-widest uppercase text-xs mb-4 block">Wall of Love</span>
+            <span className="text-sage-green font-semibold tracking-widest uppercase text-xs mb-4 block flex items-center gap-2">
+              Google Reviews
+            </span>
             <h2 className="text-4xl md:text-5xl font-bold text-deep-charcoal tracking-tight max-w-md leading-[1.1]">Patient Experiences.</h2>
           </div>
           <div className="flex bg-soft-pearl px-6 py-4 rounded-full items-center gap-4 border border-sage-green/20">

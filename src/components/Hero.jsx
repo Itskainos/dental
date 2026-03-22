@@ -38,7 +38,7 @@ const Hero = () => {
             transition={{ duration: 0.8 }}
             className="text-lg md:text-xl text-deep-charcoal/60 mb-12 leading-relaxed font-light max-w-md"
           >
-            Experience a new standard of oral care. A sanctuary where advanced clinical precision meets a tranquil, spa-like atmosphere.
+            Experience a new standard of oral care. A sanctuary where advanced clinical precision meets a tranquil, spa-like atmosphere. Serving the West Chester community for over 15 years.
           </motion.p>
           
           <motion.div 
@@ -46,11 +46,17 @@ const Hero = () => {
             transition={{ duration: 0.8 }}
             className="flex flex-col sm:flex-row gap-6 items-start sm:items-center"
           >
-            <button className="bg-deep-charcoal text-soft-pearl px-8 py-4 md:px-10 md:py-5 rounded-full font-medium tracking-wide flex items-center justify-center gap-3 hover:bg-sage-green hover:text-soft-pearl transition-all duration-300 group shadow-lg shadow-deep-charcoal/10">
-              Schedule Appointment 
-              <ArrowUpRight size={20} strokeWidth={2} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
-            </button>
-            <a href="#services" className="text-sm font-semibold tracking-widest uppercase text-deep-charcoal/60 hover:text-sage-green py-2 transition-colors border-b border-transparent hover:border-sage-green relative group">
+            <div className="flex flex-col gap-3">
+              <button className="bg-deep-charcoal text-soft-pearl px-8 py-4 md:px-10 md:py-5 rounded-full font-medium tracking-wide flex items-center justify-center gap-3 hover:bg-sage-green hover:text-soft-pearl transition-all duration-300 group shadow-lg shadow-deep-charcoal/10">
+                Schedule Appointment 
+                <ArrowUpRight size={20} strokeWidth={2} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+              </button>
+              <div className="flex items-center gap-2 text-xs font-semibold tracking-widest uppercase text-deep-charcoal/50 ml-2">
+                <span className="w-2 h-2 rounded-full bg-sage-green"></span>
+                Accepting Most Major Insurances
+              </div>
+            </div>
+            <a href="#services" className="text-sm font-semibold tracking-widest uppercase text-deep-charcoal/60 hover:text-sage-green py-2 transition-colors border-b border-transparent hover:border-sage-green relative group mt-2 sm:mt-0">
               Explore Services
               <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-sage-green transition-all duration-300 group-hover:w-full"></span>
             </a>

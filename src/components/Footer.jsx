@@ -12,7 +12,7 @@ const Footer = () => {
           <div className="flex flex-col h-full">
             <h2 className="text-3xl font-bold text-deep-charcoal mb-4">Visit Our Sanctuary.</h2>
             <p className="text-deep-charcoal/60 font-light mb-10 max-w-md leading-relaxed">
-              Conveniently located in West Chester, PA. Experience dentistry in a calm, curated space designed for your comfort.
+              Conveniently located at 123 Main St, West Chester, PA 19382. Experience dentistry in a calm, curated space designed for your comfort.
             </p>
             
             <div className="flex-1 w-full bg-sage-green/10 rounded-[30px] overflow-hidden min-h-[300px] border border-sage-green/20 p-2">
@@ -62,9 +62,11 @@ const Footer = () => {
                 </button>
               </div>
 
-              <div className="flex items-center justify-center gap-2 text-deep-charcoal/40 text-xs font-semibold tracking-wide uppercase pt-4 mt-4 border-t border-sage-green/10">
-                <Lock size={14} className="text-sage-green" />
-                <span>Protected by HIPAA-Compliant Encryption</span>
+              <div className="flex flex-col items-center justify-center gap-3 pt-4 mt-4 border-t border-sage-green/10">
+                <div className="bg-sage-green/10 text-sage-green px-4 py-1.5 rounded-full text-[11px] font-bold tracking-widest uppercase flex items-center gap-2">
+                  <Lock size={12} strokeWidth={2.5} /> HIPAA-Compliant Secure Form
+                </div>
+                <span className="text-deep-charcoal/40 text-[10px] font-semibold tracking-wider uppercase">Patient Data Protected via Zero-Knowledge Encryption</span>
               </div>
             </form>
           </motion.div>
@@ -79,7 +81,7 @@ const Footer = () => {
             </span>
           </div>
           <p className="text-sm font-light text-deep-charcoal/60">
-            © {new Date().getFullYear()} XYZ Dental. West Chester, PA.
+            © {new Date().getFullYear()} XYZ Dental. 123 Main St, West Chester, PA 19382.
           </p>
         </div>
       </div>
